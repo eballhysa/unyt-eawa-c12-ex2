@@ -7,4 +7,8 @@ class Customer
     self.surname = params[:surname]
     self.email = params[:email]
   end
+
+  def full_name
+    "#{name} #{surname}"
+  end
 end
